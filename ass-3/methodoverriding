@@ -1,0 +1,15 @@
+package main;
+
+import animals.Animal;
+import animals.Dog;
+
+public class Main {
+    public static void main(String[] args) {
+        Animal animal = new Animal();
+        Dog dog = new Dog();
+
+        // Method overriding
+        dog.makeSound(); // Will call overridden method in Dog class
+        dog.makeSound(3); // Will call overloaded method in Dog class
+    }
+}
